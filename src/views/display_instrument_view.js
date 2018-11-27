@@ -30,7 +30,7 @@ DisplayInstumentView.prototype.displayInstument = function (instrument) {
 DisplayInstumentView.prototype.displayInstrumentList = function (instrument) {
 
   const listHeading = document.createElement('h4');
-  listHeading.textContent = 'Instruments include:';
+  listHeading.textContent = `${instrument.name} instruments include:`;
   this.container.appendChild(listHeading)
 
   const instrumentList = instrument.instruments;
