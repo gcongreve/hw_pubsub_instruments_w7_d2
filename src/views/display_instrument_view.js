@@ -18,6 +18,9 @@ DisplayInstumentView.prototype.displayInstument = function (instrument) {
   const instrumentName = document.createElement('h2');
   instrumentName.textContent = instrument.name;
   instrumentWindow.appendChild(instrumentName)
+  const instrumentContent = document.createElement('p');
+  instrumentContent.textContent = instrument.description;
+  instrumentWindow.appendChild(instrumentContent)
 };
 
 module.exports = DisplayInstumentView;
