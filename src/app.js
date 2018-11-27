@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const instrumentFamilies = new InstrumentFamilies()
   instrumentFamilies.bindEvents();
 
-  // const displayInstumentView = new DisplayInstumentView();
-  // displayInstumentView.bindEvents();
+  const displayInstumentView = new DisplayInstumentView();
+  displayInstumentView.bindEvents();
 
 
 });
