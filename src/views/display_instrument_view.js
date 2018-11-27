@@ -21,19 +21,31 @@ DisplayInstumentView.prototype.displayInstument = function (instrument) {
   const instrumentContent = document.createElement('p');
   instrumentContent.textContent = instrument.description;
   this.container.appendChild(instrumentContent)
+
+  this.displayInstrumentList(instrument)
+
+};
+
+
+DisplayInstumentView.prototype.displayInstrumentList = function (instrument) {
+
   const listHeading = document.createElement('h4');
-  
   listHeading.textContent = 'Instruments include:';
   this.container.appendChild(listHeading)
 
   const instrumentList = instrument.instruments;
+
   instrumentList.forEach((instrument) => {
     let instItem = document.createElement('li');
     instItem.textContent = instrument;
     this.container.appendChild(instItem)
   })
-
-
 };
+
+
+
+
+
+
 
 module.exports = DisplayInstumentView;
