@@ -19,7 +19,7 @@ SelectInstumentView.prototype.bindEvents = function () {
    dropDownView.addEventListener('change', (event) => {
     const instrumentIndex = event.target.value;
     PubSub.publish('SelectInstumentView:instrument-index', instrumentIndex);
-    console.log(instrumentIndex);
+    console.log('instrument-index', instrumentIndex);
   });
 
 
